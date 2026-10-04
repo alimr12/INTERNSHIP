@@ -1,0 +1,268 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: lightgray;
+    font-family: Arial;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+h2 {
+    color: blue;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 10px;
+}
+
+/* Borders */
+
+.border1 {
+    border: 2px solid red;
+}
+
+.border2 {
+    border: 2px dotted blue;
+}
+
+.border3 {
+    border: 2px dashed green;
+}
+
+.border4 {
+    border: 4px double black;
+}
+
+.border5 {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.border6 {
+    border-top: 2px solid red;
+    border-bottom: 2px solid blue;
+}
+
+/* Margins */
+
+.margin1 {
+    background-color: yellow;
+    margin: 20px;
+}
+
+.margin2 {
+    background-color: lightblue;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.margin3 {
+    background-color: orange;
+    width: 200px;
+    margin: auto;
+}
+
+/* Padding */
+
+.padding1 {
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+.padding2 {
+    background-color: pink;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+/* Height and Width */
+
+.size1 {
+    background-color: orange;
+    height: 100px;
+    width: 200px;
+}
+
+.size2 {
+    background-color: lightblue;
+    max-width: 300px;
+}
+
+.size3 {
+    background-color: lightgreen;
+    min-height: 100px;
+}
+
+/* Box Model */
+
+.box1 {
+    background-color: lightblue;
+    width: 200px;
+    border: 5px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+.box2 {
+    background-color: yellow;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid red;
+    box-sizing: border-box;
+}
+
+/* Outline */
+
+.outline1 {
+    outline: 3px solid red;
+}
+
+.outline2 {
+    outline: 3px dotted blue;
+}
+
+.outline3 {
+    outline: 2px solid green;
+    outline-offset: 5px;
+}
+
+/* Text */
+
+.text1 {
+    color: red;
+}
+
+.text2 {
+    text-align: center;
+}
+
+.text3 {
+    text-transform: uppercase;
+}
+
+.text4 {
+    text-decoration: underline;
+}
+
+.text5 {
+    letter-spacing: 3px;
+}
+
+.text6 {
+    text-shadow: 2px 2px 3px gray;
+}
+
+/* Fonts */
+
+.font1 {
+    font-family: Arial;
+}
+
+.font2 {
+    font-size: 30px;
+}
+
+.font3 {
+    font-weight: bold;
+}
+
+.font4 {
+    font-style: italic;
+}
+
+.font5 {
+    font-size: 12px;
+}
+
+/* Icons */
+
+.icons {
+    font-size: 25px;
+    color: red;
+}
+
+/* Links */
+
+.link1:link {
+    color: blue;
+}
+
+.link1:visited {
+    color: purple;
+}
+
+.link1:hover {
+    color: red;
+}
+
+.link1:active {
+    color: green;
+}
+
+.link2 {
+    text-decoration: none;
+    background-color: yellow;
+}
+
+/* Lists */
+
+.list1 {
+    list-style-type: square;
+    margin-left: 30px;
+}
+
+.list2 {
+    list-style-type: upper-roman;
+    margin-left: 30px;
+}
+
+.list3 {
+    list-style-position: inside;
+    margin-left: 20px;
+}
+
+.list4 {
+    list-style-type: none;
+}
+
+/* Tables */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+tr:hover {
+    background-color: yellow;
+}
