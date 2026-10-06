@@ -1,76 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Saffron Table</title>
+<title>Saffron Table | Restaurant</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="navbar">
-<h2 class="logo">Saffron Table</h2>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#menu">Menu</a></li>
+<a href="#home" class="brand"><i class="fa fa-cutlery"></i>Saffron Table</a>
+<ul class="nav-links">
+<li><a class="active" href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li class="dropdown">
+<a href="#menu">Menu</a>
+<div class="dropdown-box">
+<a href="#starters">Starters</a>
+<a href="#mains">Main Course</a>
+<a href="#desserts">Desserts</a>
+</div>
+</li>
 <li><a href="#gallery">Gallery</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </div>
 <div class="banner" id="home">
+<div class="banner-box">
 <h1>Welcome to Saffron Table</h1>
-<p>Fresh food, made with love</p>
+<p>Fresh food, cooked with love and served with a smile</p>
+<a href="#menu" class="btn">View Menu</a>
 </div>
-<div class="section" id="menu">
+</div>
+<div class="section white">
+<div class="container">
+<h2>Why Choose Us</h2>
+<p class="sub">Three things we never compromise on</p>
+<div class="why">
+<div class="why-box">
+<i class="fa fa-clock-o"></i>
+<h3>Fast Service</h3>
+<p>Your food reaches the table hot and on time.</p>
+</div>
+<div class="why-box">
+<i class="fa fa-smile-o"></i>
+<h3>Friendly Staff</h3>
+<p>We treat every guest like family.</p>
+</div>
+<div class="why-box fresh">
+<i class="fa fa-leaf"></i>
+<h3>Fresh Ingredients</h3>
+<p>Everything is cooked fresh every single day.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="about">
+<div class="container about clearfix">
+<img class="about-img" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&h=380&fit=crop" alt="Inside the restaurant">
+<h2>Our Story</h2>
+<p>Saffron Table started as a small family kitchen with just five tables. Today we still cook the same way, using fresh produce every morning and recipes passed down over the years.</p>
+<p>Whether you are here for a quick lunch or a long dinner with friends, we want every plate to feel like home.</p>
+<ul class="points">
+<li>Open every day</li>
+<li>Family friendly</li>
+<li>Home delivery available</li>
+</ul>
+</div>
+</div>
+<div class="section white" id="menu">
+<div class="container">
 <h2>Our Menu</h2>
+<p class="sub">Pick your favourite</p>
+<h3 class="category" id="starters">Starters</h3>
 <div class="cards">
 <div class="card">
-<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=250&fit=crop">
-<h3>Pizza</h3>
-<p>Cheese, tomato and fresh basil</p>
-<p class="price">Rs. 1500</p>
+<span class="badge">Popular</span>
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=450&h=280&fit=crop" alt="Garden salad">
+<div class="card-info">
+<h4>Garden Salad</h4>
+<p>Crisp greens, tomatoes and a light lemon dressing.</p>
 </div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=250&fit=crop">
-<h3>Burger</h3>
-<p>Beef patty with cheese and veggies</p>
-<p class="price">Rs. 1100</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&h=250&fit=crop">
-<h3>Pasta</h3>
-<p>Tomato sauce with garlic and herbs</p>
-<p class="price">Rs. 1300</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=250&fit=crop">
-<h3>Salad</h3>
-<p>Fresh greens with lemon dressing</p>
 <p class="price">Rs. 650</p>
 </div>
 <div class="card">
-<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=250&fit=crop">
-<h3>Chocolate Cake</h3>
-<p>Rich chocolate with soft cream</p>
+<img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=450&h=280&fit=crop" alt="Avocado toast">
+<div class="card-info">
+<h4>Avocado Toast</h4>
+<p>Toasted bread with smashed avocado and a soft egg.</p>
+</div>
+<p class="price">Rs. 750</p>
+</div>
+</div>
+<h3 class="category" id="mains">Main Course</h3>
+<div class="cards">
+<div class="card">
+<span class="badge">Popular</span>
+<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=450&h=280&fit=crop" alt="Margherita pizza">
+<div class="card-info">
+<h4>Margherita Pizza</h4>
+<p>Thin crust with tomato sauce, mozzarella and fresh basil.</p>
+</div>
+<p class="price">Rs. 1500</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=450&h=280&fit=crop" alt="Beef burger">
+<div class="card-info">
+<h4>Beef Burger</h4>
+<p>Juicy grilled patty with cheese and veggies in a toasted bun.</p>
+</div>
+<p class="price">Rs. 1100</p>
+</div>
+</div>
+<h3 class="category" id="desserts">Desserts</h3>
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=450&h=280&fit=crop" alt="Chocolate cake">
+<div class="card-info">
+<h4>Chocolate Cake</h4>
+<p>Soft chocolate layers with rich cream on top.</p>
+</div>
 <p class="price">Rs. 700</p>
 </div>
 <div class="card">
-<img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=250&fit=crop">
-<h3>Ice Cream</h3>
-<p>Three scoops of vanilla</p>
+<img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=450&h=280&fit=crop" alt="Vanilla ice cream">
+<div class="card-info">
+<h4>Vanilla Ice Cream</h4>
+<p>Three creamy scoops with a sweet topping.</p>
+</div>
 <p class="price">Rs. 500</p>
 </div>
 </div>
 </div>
+</div>
 <div class="section dark" id="gallery">
+<div class="container clearfix">
 <h2>Gallery</h2>
-<div class="cards">
-<img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=300&h=300&fit=crop">
-<img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=300&h=300&fit=crop">
-<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300&h=300&fit=crop">
+<p class="sub">A look inside Saffron Table</p>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=300&h=300&fit=crop" alt="Dining hall">
+<div class="desc">Dining Hall</div>
+</div>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300&h=300&fit=crop" alt="Chef special">
+<div class="desc">Chef Special</div>
+</div>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300&h=300&fit=crop" alt="Grilled skewers">
+<div class="desc">Grilled Skewers</div>
+</div>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=300&h=300&fit=crop" alt="Fresh pasta">
+<div class="desc">Fresh Pasta</div>
+</div>
 </div>
 </div>
 <div class="section" id="contact">
-<h2>Opening Hours</h2>
+<div class="container">
+<h2>Visit Us</h2>
+<p class="sub">Opening hours and contact</p>
+<div class="table-box">
 <table>
 <tr>
 <th>Day</th>
@@ -89,10 +178,18 @@
 <td>12 PM - 10 PM</td>
 </tr>
 </table>
-<p class="address">Main Boulevard, Rawalpindi | 051 1234567</p>
+</div>
+<ul class="info">
+<li><i class="fa fa-map-marker"></i>Main Boulevard, Rawalpindi</li>
+<li><i class="fa fa-phone"></i>051 1234567</li>
+<li><i class="fa fa-envelope"></i>hello@saffrontable.com</li>
+</ul>
+</div>
 </div>
 <div class="footer">
 <p>Saffron Table 2026</p>
+<p class="tagline">Good food. Good company.</p>
 </div>
+<a href="#home" class="top-btn"><i class="fa fa-arrow-up"></i></a>
 </body>
 </html>
