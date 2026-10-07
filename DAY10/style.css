@@ -1,0 +1,42 @@
+body {
+font-family: Arial, sans-serif;
+padding: 20px;
+}
+
+h1 {
+text-align: center;
+}
+
+.before-after::before {
+content: "Start - ";
+color: blue;
+}
+
+.before-after::after {
+content: " - End";
+color: red;
+}
+
+.first-letter::first-letter {
+color: red;
+font-size: 35px;
+}
+
+.first-line::first-line {
+color: blue;
+font-weight: bold;
+}
+
+.selection::selection {
+background-color: yellow;
+color: black;
+}
+
+li::marker {
+color: red;
+font-size: 20px;
+}
+
+input::placeholder {
+color: green;
+}
