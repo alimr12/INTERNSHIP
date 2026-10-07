@@ -137,7 +137,6 @@ margin: 0 25px 10px 0;
 .about h2::after { margin: 10px 0 0; }
 .about h2 + p::first-letter { font-size: 34px; color: #d62828; }
 .about h2 + p::first-line { font-weight: bold; }
-.points { list-style-type: square; margin: 10px 0 0 20px; }
 .category {
 font-size: 24px;
 color: #d62828;
@@ -212,7 +211,7 @@ tr:hover { background-color: #f7b32b; }
 .info { list-style-type: none; text-align: center; }
 .info li { padding: 6px 0; font-size: 17px; }
 .info .fa { color: #d62828; margin-right: 10px; }
-.social { text-align: center; margin-top: 20px; }
+.social { text-align: center; }
 .sprite {
 display: inline-block;
 width: 48px;
@@ -235,7 +234,6 @@ color: white;
 text-align: center;
 padding: 30px 20px 20px 20px;
 }
-.tagline { font-style: italic; color: #f7b32b; }
 .top-btn:link, .top-btn:visited {
 position: fixed;
 bottom: 20px;
