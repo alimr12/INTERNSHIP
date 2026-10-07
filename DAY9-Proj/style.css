@@ -212,6 +212,23 @@ tr:hover { background-color: #f7b32b; }
 .info { list-style-type: none; text-align: center; }
 .info li { padding: 6px 0; font-size: 17px; }
 .info .fa { color: #d62828; margin-right: 10px; }
+.social { text-align: center; margin-top: 20px; }
+.sprite {
+display: inline-block;
+width: 48px;
+height: 48px;
+background-image: url("social-sprite.png");
+background-repeat: no-repeat;
+margin: 0 6px;
+}
+.sp-fb { background-position: 0 0; }
+.sp-ig { background-position: -48px 0; }
+.sp-wa { background-position: -96px 0; }
+.sp-yt { background-position: -144px 0; }
+.sp-fb:hover { background-position: 0 -48px; }
+.sp-ig:hover { background-position: -48px -48px; }
+.sp-wa:hover { background-position: -96px -48px; }
+.sp-yt:hover { background-position: -144px -48px; }
 .footer {
 background-color: hsl(0, 0%, 8%);
 color: white;
@@ -221,7 +238,7 @@ padding: 30px 20px 20px 20px;
 .tagline { font-style: italic; color: #f7b32b; }
 .top-btn:link, .top-btn:visited {
 position: fixed;
-bottom: 30px;
+bottom: 20px;
 right: 20px;
 z-index: 150;
 background-color: #d62828;
