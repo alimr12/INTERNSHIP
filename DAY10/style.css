@@ -7,19 +7,108 @@ h1 {
 text-align: center;
 }
 
-.before-after::before {
-content: "Start - ";
+h2 {
+margin-top: 30px;
+}
+
+.link:link {
 color: blue;
 }
 
-.before-after::after {
-content: " - End";
+.link:visited {
+color: purple;
+}
+
+.link:hover {
 color: red;
+}
+
+.link:active {
+color: green;
+}
+
+.hover-button:hover {
+background-color: yellow;
+}
+
+input:focus {
+background-color: lightblue;
+}
+
+.active-button:active {
+background-color: red;
+color: white;
+}
+
+.children p:first-child {
+color: red;
+}
+
+.children p:last-child {
+color: blue;
+}
+
+.children p:nth-child(3) {
+color: green;
+}
+
+.types p:first-of-type {
+background-color: yellow;
+}
+
+.types p:last-of-type {
+background-color: lightblue;
+}
+
+.only p:only-child {
+color: red;
+}
+
+.empty:empty {
+width: 100px;
+height: 50px;
+background-color: gray;
+}
+
+.not p:not(.special) {
+color: blue;
+}
+
+input:checked {
+accent-color: green;
+}
+
+input:disabled {
+background-color: lightgray;
+}
+
+input:enabled {
+border: 2px solid green;
+}
+
+input:required {
+border: 2px solid red;
+}
+
+input:optional {
+border: 2px solid blue;
+}
+
+input:valid {
+background-color: lightgreen;
+}
+
+input:invalid {
+background-color: pink;
+}
+
+input:read-only {
+background-color: lightgray;
 }
 
 .first-letter::first-letter {
 color: red;
-font-size: 35px;
+font-size: 40px;
 }
 
 .first-line::first-line {
@@ -27,16 +116,56 @@ color: blue;
 font-weight: bold;
 }
 
-.selection::selection {
-background-color: yellow;
-color: black;
+.before-after::before {
+content: "Start - ";
+color: red;
 }
 
-li::marker {
+.before-after::after {
+content: " - End";
+color: green;
+}
+
+.marker li::marker {
 color: red;
 font-size: 20px;
 }
 
-input::placeholder {
+.selection::selection {
+background-color: yellow;
+color: red;
+}
+
+.placeholder::placeholder {
 color: green;
+}
+
+.file::file-selector-button {
+background-color: blue;
+color: white;
+padding: 8px;
+border: none;
+}
+
+#target-box {
+padding: 30px;
+background-color: lightgray;
+margin-top: 20px;
+}
+
+#target-box:target {
+background-color: yellow;
+}
+
+p:lang(en) {
+color: blue;
+}
+
+p:lang(fr) {
+color: red;
+}
+
+.has:has(p) {
+border: 2px solid green;
+padding: 20px;
 }
