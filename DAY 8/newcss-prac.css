@@ -1,8 +1,4 @@
-Yes — you want the **same CSS code but without all the comments** like `/* CSS BORDERS */`.
 
-Here is the clean version:
-
-```css
 .border1 {
     border: 2px solid red;
 }
