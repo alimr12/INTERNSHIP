@@ -28,10 +28,16 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare website files
+        run: |
+          mkdir public
+          cp -R "HTML-CSS/Final Project/." public/
+          ls -la public
+
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: HTML-CSS/Final Project
+          path: ./public
 
       - name: Deploy website
         id: deployment
